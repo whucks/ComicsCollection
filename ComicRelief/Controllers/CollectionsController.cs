@@ -122,39 +122,6 @@ namespace ComicRelief.Controllers
             Marvel marvelClient = new Marvel(_apiKeyPublic, _apiKeyPrivte);
             Comic comic = marvelClient.GetComic(comicId);
             Collection c = new Collection();
-            /*
-            // add comic data to collection
-            if( comic.Id != null )
-            {
-                collection.ComicID = comic.Id.ToString();
-            }
-
-            if( !comic.Title.Equals("") && comic.Title != null )
-            {
-                collection.Title = comic.Title;
-            }
-            else
-            {
-                collection.Title = "";
-            }
-
-            if( !comic.ISBN.Equals("") && comic.ISBN != null )
-            {
-                collection.isbn = comic.ISBN;
-            }
-            else
-            {
-                collection.isbn = "";
-            }
-
-            if( comic.Description != null )
-            {
-                collection.Description = comic.Description;
-            }
-            else
-            {
-                collection.Description = "";
-            }*/
 
             c.ComicID = comic.Id.ToString();
             c.Description = comic.Description;
@@ -163,37 +130,6 @@ namespace ComicRelief.Controllers
             c.Title = comic.Title;
             c.issueNumber = comic.IssueNumber.ToString();
 
-            /*
-            if( comic.Description != null )
-            {
-                c.Description = comic.Description.ToString();
-            }
-            else
-            {
-                c.Description = "";
-            }
-
-            if (comic.ISBN != null)
-            {
-                c.isbn = comic.ISBN.ToString();
-            }
-            else
-            {
-                c.isbn = "";
-            }
-
-            if (comic.Title != null)
-            {
-                c.Title = comic.Title.ToString();
-            }
-            else
-            {
-                c.Title = "";
-            }
-
-            c.Publisher = "Marvel";
-            c.issueNumber = comic.IssueNumber.ToString();
-            */
             if (ModelState.IsValid)
             {
                 db.Collections.Add(c);
