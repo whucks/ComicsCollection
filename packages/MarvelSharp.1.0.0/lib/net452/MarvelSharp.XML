@@ -1,0 +1,2414 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MarvelSharp</name>
+    </assembly>
+    <members>
+        <member name="T:MarvelSharp.CreatorOrder">
+            <summary>
+            Creator sort options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.LastNameAscending">
+            <summary>
+            Sort in ascending Last Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.FirstNameAscending">
+            <summary>
+            Sort in ascending First Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.MiddleNameAscending">
+            <summary>
+            Sort in ascending Middle Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.SuffixAscending">
+            <summary>
+            Sort in ascending Suffix order (e.g. Jr., Sr.)
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.ModifiedAscending">
+            <summary>
+            Sort in ascending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.LastNameDescending">
+            <summary>
+            Sort in descending Last Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.FirstNameDescending">
+            <summary>
+            Sort in descending First Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.MiddleNameDescending">
+            <summary>
+            Sort in descending Middle Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.SuffixDescending">
+            <summary>
+            Sort in descending Suffix order (e.g. Jr., Sr.)
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CreatorOrder.ModifiedDescending">
+            <summary>
+            Sort in descending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.SeriesType">
+            <summary>
+            Series type options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesType.Collection">
+            <summary>
+            Collection series
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesType.OneShot">
+            <summary>
+            One shot series
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesType.Limited">
+            <summary>
+            Limited series
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesType.Ongoing">
+            <summary>
+            Ongoing series
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.SeriesOrder">
+            <summary>
+            Series sort options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesOrder.TitleAscending">
+            <summary>
+            Sort in ascending Title order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesOrder.ModifiedAscending">
+            <summary>
+            Sort in ascending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesOrder.StartYearAscending">
+            <summary>
+            Sort in ascending order of the year the series was first published
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesOrder.TitleDescending">
+            <summary>
+            Sort in descending Title order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesOrder.ModifiedDescending">
+            <summary>
+            Sort in descending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.SeriesOrder.StartYearDescending">
+            <summary>
+            Sort in descending order of the year the series was first published
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.StoryOrder">
+            <summary>
+            Story sort options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.StoryOrder.IdAscending">
+            <summary>
+            Sort in ascending ID order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.StoryOrder.ModifiedAscending">
+            <summary>
+            Sort in ascending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.StoryOrder.IdDescending">
+            <summary>
+            Sort in descending ID order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.StoryOrder.ModifiedDescending">
+            <summary>
+            Sort in descending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Internal.Services.CharacterService.GetAllAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CharacterCriteria)">
+            <summary>
+            Fetches a list of comic characters, with optional filters
+            </summary>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <returns></returns>
+        </member>
+        <member name="T:MarvelSharp.ComicOrder">
+            <summary>
+            Comic sort options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.FocDateAscending">
+            <summary>
+            Sort in ascending Final Order Cut-off Date order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.OnSaleDateAscending">
+            <summary>
+            Sort in ascending On Sale Date order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.TitleAscending">
+            <summary>
+            Sort in ascending Title order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.IssueNumberAscending">
+            <summary>
+            Sort in ascending Issue Number order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.ModifiedAscending">
+            <summary>
+            Sort in ascending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.FocDateDescending">
+            <summary>
+            Sort in descending Final Order Cut-off Date order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.OnSaleDateDescending">
+            <summary>
+            Sort in descending On Sale Date order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.TitleDescending">
+            <summary>
+            Sort in descending Title order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.IssueNumberDescending">
+            <summary>
+            Sort in descending Issue Number order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.ComicOrder.ModifiedDescending">
+            <summary>
+            Sort in descending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.DateDescriptor">
+            <summary>
+            Date descriptor options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.DateDescriptor.LastWeek">
+            <summary>
+            Return comics published last week
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.DateDescriptor.ThisWeek">
+            <summary>
+            Return comics published this week
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.DateDescriptor.NextWeek">
+            <summary>
+            Return comics to be published last week
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.DateDescriptor.ThisMonth">
+            <summary>
+            Return comics published this month
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.EventOrder">
+            <summary>
+            Event sort options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.EventOrder.NameAscending">
+            <summary>
+            Sort in ascending Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.EventOrder.StartDateAscending">
+            <summary>
+            Sort in ascending order of the date of publication of the first issue in the event
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.EventOrder.ModifiedAscending">
+            <summary>
+            Sort in ascending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.EventOrder.NameDescending">
+            <summary>
+            Sort in descending Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.EventOrder.StartDateDescending">
+            <summary>
+            Sort in descending order of the date of publication of the first issue in the event
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.EventOrder.ModifiedDescending">
+            <summary>
+            Sort in descending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.Format">
+            <summary>
+            Comic format options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.Format.Comic">
+            <summary>
+            Comic format
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.Format.Magazine">
+            <summary>
+            Magazine format
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.Format.TradePaperback">
+            <summary>
+            Trade paperback format
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.Format.Hardcover">
+            <summary>
+            Hardcover format
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.Format.Digest">
+            <summary>
+            Digest format
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.Format.GraphicNovel">
+            <summary>
+            Graphic novel format
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.Format.DigitalComic">
+            <summary>
+            Digital comic format
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.Format.InfiniteComic">
+            <summary>
+            Infinite comic format
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.FormatType">
+            <summary>
+            Comic format type options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.FormatType.Comic">
+            <summary>
+            Comic format type
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.FormatType.Collection">
+            <summary>
+            Collection format type
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.CharacterOrder">
+            <summary>
+            Character sort options
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CharacterOrder.NameAscending">
+            <summary>
+            Sort in ascending Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CharacterOrder.ModifiedAscending">
+            <summary>
+            Sort in ascending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CharacterOrder.NameDescending">
+            <summary>
+            Sort in descending Name order
+            </summary>
+        </member>
+        <member name="F:MarvelSharp.CharacterOrder.ModifiedDescending">
+            <summary>
+            Sort in descending order of the date the resource was last modified
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.MarvelApiResources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.DateDescriptorLastWeek">
+            <summary>
+              Looks up a localized string similar to lastWeek.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.DateDescriptorNextWeek">
+            <summary>
+              Looks up a localized string similar to nextWeek.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.DateDescriptorThisMonth">
+            <summary>
+              Looks up a localized string similar to thisMonth.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.DateDescriptorThisWeek">
+            <summary>
+              Looks up a localized string similar to thisWeek.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatComic">
+            <summary>
+              Looks up a localized string similar to comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatDigest">
+            <summary>
+              Looks up a localized string similar to digest.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatDigitalComic">
+            <summary>
+              Looks up a localized string similar to digital comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatGraphicNovel">
+            <summary>
+              Looks up a localized string similar to graphic novel.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatHardcover">
+            <summary>
+              Looks up a localized string similar to hardcover.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatInfiniteComic">
+            <summary>
+              Looks up a localized string similar to infinite comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatMagazine">
+            <summary>
+              Looks up a localized string similar to magazine.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatTradePaperback">
+            <summary>
+              Looks up a localized string similar to trade paperback.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatTypeCollection">
+            <summary>
+              Looks up a localized string similar to collection.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.FormatTypeComic">
+            <summary>
+              Looks up a localized string similar to comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.HttpSuccessCode">
+            <summary>
+              Looks up a localized string similar to 200.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByDateModifiedAsc">
+            <summary>
+              Looks up a localized string similar to modified.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByDateModifiedDesc">
+            <summary>
+              Looks up a localized string similar to -modified.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByFirstNameAsc">
+            <summary>
+              Looks up a localized string similar to firstName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByFirstNameDesc">
+            <summary>
+              Looks up a localized string similar to -firstName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByFocDateAsc">
+            <summary>
+              Looks up a localized string similar to focDate.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByFocDateDesc">
+            <summary>
+              Looks up a localized string similar to -focDate.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByIdAsc">
+            <summary>
+              Looks up a localized string similar to id.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByIdDesc">
+            <summary>
+              Looks up a localized string similar to -id.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByIssueNoAsc">
+            <summary>
+              Looks up a localized string similar to issueNumber.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByIssueNoDesc">
+            <summary>
+              Looks up a localized string similar to -issueNumber.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByLastNameAsc">
+            <summary>
+              Looks up a localized string similar to lastName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByLastNameDesc">
+            <summary>
+              Looks up a localized string similar to -lastName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByMiddleNameAsc">
+            <summary>
+              Looks up a localized string similar to middleName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByMiddleNameDesc">
+            <summary>
+              Looks up a localized string similar to -middleName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByNameAsc">
+            <summary>
+              Looks up a localized string similar to name.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByNameDesc">
+            <summary>
+              Looks up a localized string similar to -name.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByOnSaleDateAsc">
+            <summary>
+              Looks up a localized string similar to onsaleDate.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByOnSaleDateDesc">
+            <summary>
+              Looks up a localized string similar to -onsaleDate.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByStartDateAsc">
+            <summary>
+              Looks up a localized string similar to startDate.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByStartDateDesc">
+            <summary>
+              Looks up a localized string similar to -startDate.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByStartYearAsc">
+            <summary>
+              Looks up a localized string similar to startYear.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByStartYearDesc">
+            <summary>
+              Looks up a localized string similar to -startYear.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderBySuffixAsc">
+            <summary>
+              Looks up a localized string similar to suffix.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderBySuffixDesc">
+            <summary>
+              Looks up a localized string similar to -suffix.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByTitleAsc">
+            <summary>
+              Looks up a localized string similar to title.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.OrderByTitleDesc">
+            <summary>
+              Looks up a localized string similar to -title.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterApiKey">
+            <summary>
+              Looks up a localized string similar to apikey.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterCharacters">
+            <summary>
+              Looks up a localized string similar to characters.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterCollaborators">
+            <summary>
+              Looks up a localized string similar to collaborators.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterComics">
+            <summary>
+              Looks up a localized string similar to comics.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterContains">
+            <summary>
+              Looks up a localized string similar to contains.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterCreators">
+            <summary>
+              Looks up a localized string similar to creators.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterDateDescriptor">
+            <summary>
+              Looks up a localized string similar to dateDescriptor.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterDateRange">
+            <summary>
+              Looks up a localized string similar to dateRange.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterDateTimeFormat">
+            <summary>
+              Looks up a localized string similar to yyyy-MM-dd.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterDiamondCode">
+            <summary>
+              Looks up a localized string similar to diamondCode.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterDigitalId">
+            <summary>
+              Looks up a localized string similar to digitalId.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterEan">
+            <summary>
+              Looks up a localized string similar to ean.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterEvents">
+            <summary>
+              Looks up a localized string similar to events.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterFirstName">
+            <summary>
+              Looks up a localized string similar to firstName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterFirstNameStartsWith">
+            <summary>
+              Looks up a localized string similar to firstNameStartsWith.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterFormat">
+            <summary>
+              Looks up a localized string similar to format.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterFormatType">
+            <summary>
+              Looks up a localized string similar to formatType.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterHasDigitalIssue">
+            <summary>
+              Looks up a localized string similar to hasDigitalIssue.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterHash">
+            <summary>
+              Looks up a localized string similar to hash.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterIsbn">
+            <summary>
+              Looks up a localized string similar to isbn.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterIssn">
+            <summary>
+              Looks up a localized string similar to issn.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterIssueNumber">
+            <summary>
+              Looks up a localized string similar to issueNumber.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterLastName">
+            <summary>
+              Looks up a localized string similar to lastName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterLastNameStartsWith">
+            <summary>
+              Looks up a localized string similar to lastNameStartsWith.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterLimit">
+            <summary>
+              Looks up a localized string similar to limit.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterListSeparator">
+            <summary>
+              Looks up a localized string similar to ,.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterMiddleName">
+            <summary>
+              Looks up a localized string similar to middleName.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterMiddleNameStartsWith">
+            <summary>
+              Looks up a localized string similar to middleNameStartsWith.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterModifiedSince">
+            <summary>
+              Looks up a localized string similar to modifiedSince.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterName">
+            <summary>
+              Looks up a localized string similar to name.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterNameStartsWith">
+            <summary>
+              Looks up a localized string similar to nameStartsWith.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterNoVariants">
+            <summary>
+              Looks up a localized string similar to noVariants.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterOffset">
+            <summary>
+              Looks up a localized string similar to offset.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterOrderBy">
+            <summary>
+              Looks up a localized string similar to orderBy.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterSeries">
+            <summary>
+              Looks up a localized string similar to series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterSeriesType">
+            <summary>
+              Looks up a localized string similar to seriesType.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterSharedAppearances">
+            <summary>
+              Looks up a localized string similar to sharedAppearances.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterStartYear">
+            <summary>
+              Looks up a localized string similar to startYear.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterStories">
+            <summary>
+              Looks up a localized string similar to stories.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterSuffix">
+            <summary>
+              Looks up a localized string similar to suffix.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterTimeStamp">
+            <summary>
+              Looks up a localized string similar to ts.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterTimeStampFormat">
+            <summary>
+              Looks up a localized string similar to yyMMddHHmmss.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterTitle">
+            <summary>
+              Looks up a localized string similar to title.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterTitleStartsWith">
+            <summary>
+              Looks up a localized string similar to titleStartsWith.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterUpc">
+            <summary>
+              Looks up a localized string similar to upc.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterValueFalse">
+            <summary>
+              Looks up a localized string similar to false.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.ParameterValueTrue">
+            <summary>
+              Looks up a localized string similar to true.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.SeriesTypeCollection">
+            <summary>
+              Looks up a localized string similar to collection.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.SeriesTypeLimited">
+            <summary>
+              Looks up a localized string similar to limited.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.SeriesTypeOneShot">
+            <summary>
+              Looks up a localized string similar to one shot.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.SeriesTypeOngoing">
+            <summary>
+              Looks up a localized string similar to ongoing.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.String1">
+            <summary>
+              Looks up a localized string similar to .
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlBase">
+            <summary>
+              Looks up a localized string similar to https://gateway.marvel.com/v1/public/.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixAllCharacters">
+            <summary>
+              Looks up a localized string similar to characters.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixAllComics">
+            <summary>
+              Looks up a localized string similar to comics.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixAllCreators">
+            <summary>
+              Looks up a localized string similar to creators.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixAllEvents">
+            <summary>
+              Looks up a localized string similar to events.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixAllSeries">
+            <summary>
+              Looks up a localized string similar to series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixAllStories">
+            <summary>
+              Looks up a localized string similar to series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCharacterById">
+            <summary>
+              Looks up a localized string similar to characters/{0}.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCharacterComics">
+            <summary>
+              Looks up a localized string similar to characters/{0}/comics.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCharacterEvents">
+            <summary>
+              Looks up a localized string similar to characters/{0}/events.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCharacterSeries">
+            <summary>
+              Looks up a localized string similar to characters/{0}/series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCharacterStories">
+            <summary>
+              Looks up a localized string similar to characters/{0}/stories.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixComicById">
+            <summary>
+              Looks up a localized string similar to comics/{0}.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixComicCharacters">
+            <summary>
+              Looks up a localized string similar to comics/{0}/characters.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixComicCreators">
+            <summary>
+              Looks up a localized string similar to comics/{0}/creators.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixComicEvents">
+            <summary>
+              Looks up a localized string similar to comics/{0}/events.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixComicStories">
+            <summary>
+              Looks up a localized string similar to comics/{0}/stories.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCreatorById">
+            <summary>
+              Looks up a localized string similar to creators/{0}.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCreatorComics">
+            <summary>
+              Looks up a localized string similar to creators/{0}/comics.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCreatorEvents">
+            <summary>
+              Looks up a localized string similar to creators/{0}/events.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCreatorSeries">
+            <summary>
+              Looks up a localized string similar to creators/{0}/series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixCreatorStories">
+            <summary>
+              Looks up a localized string similar to creators/{0}/stories.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixEventById">
+            <summary>
+              Looks up a localized string similar to events/{0}.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixEventCharacters">
+            <summary>
+              Looks up a localized string similar to events/{0}/characters.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixEventComics">
+            <summary>
+              Looks up a localized string similar to events/{0}/comics.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixEventCreators">
+            <summary>
+              Looks up a localized string similar to events/{0}/creators.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixEventSeries">
+            <summary>
+              Looks up a localized string similar to events/{0}/series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixEventStories">
+            <summary>
+              Looks up a localized string similar to events/{0}/stories.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixSeriesById">
+            <summary>
+              Looks up a localized string similar to series/{0}.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixSeriesCharacters">
+            <summary>
+              Looks up a localized string similar to series/{0}/characters.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixSeriesComics">
+            <summary>
+              Looks up a localized string similar to series/{0}/comics.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixSeriesCreators">
+            <summary>
+              Looks up a localized string similar to series/{0}/creators.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixSeriesEvents">
+            <summary>
+              Looks up a localized string similar to series/{0}/events.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixSeriesStories">
+            <summary>
+              Looks up a localized string similar to series/{0}/stories.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixStoryById">
+            <summary>
+              Looks up a localized string similar to stories/{0}.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixStoryCharacters">
+            <summary>
+              Looks up a localized string similar to stories/{0}/characters.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixStoryComics">
+            <summary>
+              Looks up a localized string similar to stories/{0}/comics.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixStoryCreators">
+            <summary>
+              Looks up a localized string similar to stories/{0}/creators.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixStoryEvents">
+            <summary>
+              Looks up a localized string similar to stories/{0}/events.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.MarvelApiResources.UrlSuffixStorySeries">
+            <summary>
+              Looks up a localized string similar to stories/{0}/series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.ItemBase.Id">
+            <summary>
+            The unique ID of the resource.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.ItemBase.Modified">
+            <summary>
+            The date the resource was most recently modified.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.ItemBase.ResourceUri">
+            <summary>
+            The canonical URL identifier for this resource.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.ItemBase.Thumbnail">
+            <summary>
+            The representative image for this resource.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Character.Name">
+            <summary>
+            The name of the character.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Character.Description">
+            <summary>
+            A short bio or description of the character.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Character.Urls">
+            <summary>
+            A set of public web site URLs for the resource.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Character.Comics">
+            <summary>
+            A resource list containing comics which feature this character.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Character.Series">
+            <summary>
+            A resource list of series in which this character appears.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Character.Stories">
+            <summary>
+            A resource list of stories in which this character appears.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Character.Events">
+            <summary>
+            A resource list of events in which this character appears.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Model.Character.ToString">
+            <summary>
+            Returns a string identifying the Character object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarvelSharp.Model.TextObject.Type">
+            <summary>
+            The canonical type of the text object (e.g. solicit text, preview text, etc.).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.TextObject.Language">
+            <summary>
+            The IETF language tag denoting the language the text object is written in.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.TextObject.Text">
+            <summary>
+            The text.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.DateItem.Type">
+            <summary>
+            A description of the date (e.g. onsale date, FOC date).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.DateItem.Date">
+            <summary>
+            The date.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.ItemSummary.Name">
+            <summary>
+            The name of the resource.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.ItemSummary.ResourceUri">
+            <summary>
+            The path to the individual resource.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.ItemSummary.Type">
+            <summary>
+            Story summaries only: The type of the story (interior or cover).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.ItemSummary.Role">
+            <summary>
+            Creator summaries only: The role of the creator in the parent entity.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.PriceItem.Type">
+            <summary>
+            A description of the price (e.g. print price, digital price).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.PriceItem.Price">
+            <summary>
+            The price (all prices in USD).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.DigitalId">
+            <summary>
+            The ID of the digital comic representation of this comic. Will be 0 if the comic is not available digitally.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Title">
+            <summary>
+            The canonical title of the comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.IssueNumber">
+            <summary>
+            The number of the issue in the series (will generally be 0 for collection formats).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.VariantDescription">
+            <summary>
+            If the issue is a variant (e.g. an alternate cover, second printing, or director’s cut), a text description of the variant.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Description">
+            <summary>
+            The preferred description of the comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Isbn">
+            <summary>
+            The ISBN for the comic (generally only populated for collection formats).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Upc">
+            <summary>
+            The UPC barcode number for the comic (generally only populated for periodical formats).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.DiamondCode">
+            <summary>
+            The Diamond code for the comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Ean">
+            <summary>
+            The EAN barcode for the comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Issn">
+            <summary>
+            The ISSN barcode for the comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Format">
+            <summary>
+            The publication format of the comic e.g. comic, hardcover, trade paperback.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.PageCount">
+            <summary>
+            The number of story pages in the comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.TextObjects">
+            <summary>
+            A set of descriptive text blurbs for the comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Urls">
+            <summary>
+            A set of public web site URLs for the resource.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Series">
+            <summary>
+            A summary representation of the series to which this comic belongs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Variants">
+            <summary>
+            A list of variant issues for this comic (includes the "original" issue if the current issue is a variant).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Collections">
+            <summary>
+            A list of collections which include this comic (will generally be empty if the comic's format is a collection).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.CollectedIssues">
+            <summary>
+            A list of issues collected in this comic (will generally be empty for periodical formats such as "comic" or "magazine").
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Dates">
+            <summary>
+            A list of key dates for this comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Prices">
+            <summary>
+            A list of prices for this comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Images">
+            <summary>
+            A list of promotional images associated with this comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Creators">
+            <summary>
+            A resource list containing the creators associated with this comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Characters">
+            <summary>
+            A resource list containing the characters which appear in this comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Stories">
+            <summary>
+            A resource list containing the stories which appear in this comic.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Comic.Events">
+            <summary>
+            A resource list containing the events in which this comic appears.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Model.Comic.ToString">
+            <summary>
+            Returns a string identifying the Comic object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.FirstName">
+            <summary>
+            The first name of the creator.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.MiddleName">
+            <summary>
+            The middle name of the creator.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.LastName">
+            <summary>
+            The last name of the creator.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.Suffix">
+            <summary>
+            The suffix or honorific for the creator.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.FullName">
+            <summary>
+            The full name of the creator (a space-separated concatenation of the above four fields).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.Comics">
+            <summary>
+            A resource list containing the comics which feature work by this creator.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.Series">
+            <summary>
+            A resource list containing the series which feature work by this creator.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.Stories">
+            <summary>
+            A resource list containing the stories which feature work by this creator.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.Events">
+            <summary>
+            A resource list containing the events which feature work by this creator.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Creator.Urls">
+            <summary>
+            A set of public web site URLs for the resource.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Model.Creator.ToString">
+            <summary>
+            Returns a string identifying the Creator object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarvelSharp.Model.Data`1.Offset">
+            <summary>
+            The requested offset (number of skipped results) of the call.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Data`1.Limit">
+            <summary>
+            The requested result limit.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Data`1.Total">
+            <summary>
+            The total number of resources available given the current filter set.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Data`1.Count">
+            <summary>
+            The total number of results returned by this call.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Data`1.Result">
+            <summary>
+            The entity or entities returned by the call.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Title">
+            <summary>
+            The title of the event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Description">
+            <summary>
+            A description of the event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Urls">
+            <summary>
+            A set of public web site URLs for the event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Start">
+            <summary>
+            The date of publication of the first issue in this event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.End">
+            <summary>
+            The date of publication of the last issue in this event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Comics">
+            <summary>
+            A resource list containing the comics in this event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Stories">
+            <summary>
+            A resource list containing the stories in this event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Series">
+            <summary>
+            A resource list containing the series in this event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Characters">
+            <summary>
+            A resource list containing the characters which appear in this event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Creators">
+            <summary>
+            A resource list containing creators whose work appears in this event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Next">
+            <summary>
+            A summary representation of the event which follows this event.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Event.Previous">
+            <summary>
+            A summary representation of the event which preceded this event.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Model.Event.ToString">
+            <summary>
+            Returns a string identifying the Event object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MarvelSharp.Model.Response`1">
+            <summary>
+            A class representing the full response from the Marvel Comics API
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:MarvelSharp.Model.Response`1.Success">
+            <summary>
+            If false, the Marvel Comics API did not return an error code.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Response`1.Code">
+            <summary>
+            The status code of the returned result.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Response`1.Status">
+            <summary>
+            A string description of the call status.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Response`1.Copyright">
+            <summary>
+            The copyright notice for the returned result.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Response`1.AttributionText">
+            <summary>
+            The attribution notice for this result. Please display either this notice or the contents of the attributionHTML field on all screens which contain data from the Marvel Comics API.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Response`1.AttributionHtml">
+            <summary>
+            An HTML representation of the attribution notice for this result. Please display either this notice or the contents of the attributionText field on all screens which contain data from the Marvel Comics API.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Response`1.Data">
+            <summary>
+            The results returned by the call.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Response`1.ETag">
+            <summary>
+            A digest value of the content returned by the call.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Title">
+            <summary>
+            The canonical title of the series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Description">
+            <summary>
+            A description of the series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Urls">
+            <summary>
+            A set of public web site URLs for the resource.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.StartYear">
+            <summary>
+            The first year of publication for the series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.EndYear">
+            <summary>
+            The last year of publication for the series (conventionally, 2099 for ongoing series) .
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Rating">
+            <summary>
+            The age-appropriateness rating for the series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Type">
+            <summary>
+            The type of the series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Comics">
+            <summary>
+            A resource list containing comics in this series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Stories">
+            <summary>
+            A resource list containing stories which occur in comics in this series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Events">
+            <summary>
+            A resource list containing events which take place in comics in this series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Characters">
+            <summary>
+            A resource list containing characters which appear in comics in this series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Creators">
+            <summary>
+            A resource list of creators whose work appears in comics in this series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Next">
+            <summary>
+            A summary representation of the series which follows this series.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Series.Previous">
+            <summary>
+            A summary representation of the series which preceded this series.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Model.Series.ToString">
+            <summary>
+            Returns a string identifying the Series object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.Title">
+            <summary>
+            The story title.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.Description">
+            <summary>
+            A short description of the story.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.Type">
+            <summary>
+            The story type e.g. interior story, cover, text story.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.Creators">
+            <summary>
+            A resource list of creators who worked on this story.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.Characters">
+            <summary>
+            A resource list of characters which appear in this story.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.Series">
+            <summary>
+            A resource list containing series in which this story appears.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.Comics">
+            <summary>
+            A resource list containing comics in which this story takes place.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.Events">
+            <summary>
+            A resource list of the events in which this story appears.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Story.OriginalIssue">
+            <summary>
+            A summary representation of the issue in which this story was originally published.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Model.Story.ToString">
+            <summary>
+            Returns a string identifying the Story object
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:MarvelSharp.Model.Image.Path">
+            <summary>
+            The directory path of to the image.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Image.Extension">
+            <summary>
+            The file extension for the image.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Url.Type">
+            <summary>
+            A text identifier for the URL.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Model.Url.Value">
+            <summary>
+            A full URL (including scheme, domain, and path).
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.Criteria.StoryCriteria">
+            <summary>
+            A class representing criteria by which to filter stories.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Criteria.StoryCriteria.#ctor">
+            <summary>
+            Initializes an instance of the StoryCriteria class
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.StoryCriteria.Characters">
+            <summary>
+            Return only stories which feature characters specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.StoryCriteria.Comics">
+            <summary>
+            Return only stories contained in comics specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.StoryCriteria.Creators">
+            <summary>
+            Return only stories which feature work by creators specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.StoryCriteria.Events">
+            <summary>
+            Return only stories which take place during events specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.StoryCriteria.Series">
+            <summary>
+            Return only stories contained in series speified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.StoryCriteria.OrderBy">
+            <summary>
+            Order the result set by the selected fields. Multiple values are given priority in the order in which they are passed.
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.Criteria.SeriesCriteria">
+            <summary>
+            A class representing criteria by which to filter series.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Criteria.SeriesCriteria.#ctor">
+            <summary>
+            Initializes an instance of the SeriesCriteria class
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.Title">
+            <summary>
+            Return only series matching the specified title.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.TitleStartsWith">
+            <summary>
+            Return series with titles that begin with the specified string (e.g. Sp).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.StartYear">
+            <summary>
+            Return only series matching the specified start year.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.Characters">
+            <summary>
+            Return only series which feature characters specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.Comics">
+            <summary>
+            Return only series which contain comics specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.Creators">
+            <summary>
+            Return only series which feature work by creators specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.Events">
+            <summary>
+            Return only series which have comics that take place during events specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.Stories">
+            <summary>
+            Return only series which contain stories specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.SeriesType">
+            <summary>
+            Filter the series by publication frequency type.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.Contains">
+            <summary>
+            Return only series containing one or more comics with the specified format(s).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.SeriesCriteria.OrderBy">
+            <summary>
+            Order the result set by the selected fields. Multiple values are given priority in the order in which they are passed.
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.Criteria.EventCriteria">
+            <summary>
+            A class representing criteria by which to filter events.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Criteria.EventCriteria.#ctor">
+            <summary>
+            Initializes an instance of the EventCriteria class
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.EventCriteria.Name">
+            <summary>
+            Return only events which match the specified name.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.EventCriteria.NameStartsWith">
+            <summary>
+            Return events with names that begin with the specified string (e.g. Sp).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.EventCriteria.Creators">
+            <summary>
+            Return only events which feature work by creators specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.EventCriteria.Characters">
+            <summary>
+            Return only events which feature characters specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.EventCriteria.Series">
+            <summary>
+            Return only events which are part of series specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.EventCriteria.Comics">
+            <summary>
+            Return only events which take place in comics specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.EventCriteria.Stories">
+            <summary>
+            Return only events which take place in stories specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.EventCriteria.OrderBy">
+            <summary>
+            Order the result set by the selected fields. Multiple values are given priority in the order in which they are passed.
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.Criteria.ComicCriteria">
+            <summary>
+            A class representing criteria by which to filter comics.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Criteria.ComicCriteria.#ctor">
+            <summary>
+            Initializes an instance of the ComicCriteria class
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Format">
+            <summary>
+            Filter by the issue format.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.FormatType">
+            <summary>
+            Filter by the issue format type. 
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.NoVariants">
+            <summary>
+            Exclude variants (alternate covers, secondary printings, director's cuts, etc.) from the result set.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.DateDescriptor">
+            <summary>
+            Return comics within a predefined date range.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.DateRange">
+            <summary>
+            Return comics within a predefined date range.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Title">
+            <summary>
+            Return only issues in series whose title matches the input.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.TitleStartsWith">
+            <summary>
+            Return only issues in series whose title starts with the input.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.StartYear">
+            <summary>
+            Return only issues in series whose start year matches the input.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.IssueNumber">
+            <summary>
+            Return only issues in series whose issue number matches the input.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.DiamondCode">
+            <summary>
+            Filter by diamond code.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.DigitalId">
+            <summary>
+            Filter by digital comic id.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Upc">
+            <summary>
+            Filter by UPC.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Isbn">
+            <summary>
+            Filter by ISBN.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Ean">
+            <summary>
+            Filter by EAN.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Issn">
+            <summary>
+            Filter by ISSN.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.HasDigitalIssue">
+            <summary>
+            Include only results which are available digitally.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Creators">
+            <summary>
+            Return only comics which feature work by creators specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Series">
+            <summary>
+            Return only comics which are part of series specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Events">
+            <summary>
+            Return only comics which take place in events specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Stories">
+            <summary>
+            Return only comics which contain stories specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.SharedAppearances">
+            <summary>
+            Return only comics in which characters specified by a list of IDs appear together (for example in which BOTH Spider-Man and Wolverine appear). 
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.Collaborators">
+            <summary>
+            Return only comics in which creators specified by a list of IDs worked together (for example in which BOTH Stan Lee and Jack Kirby did work).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.ComicCriteria.OrderBy">
+            <summary>
+            Order the result set by the selected fields. Multiple values are given priority in the order in which they are passed.
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.Criteria.CharacterCriteria">
+            <summary>
+            A class representing criteria by which to filter characters.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Criteria.CharacterCriteria.#ctor">
+            <summary>
+            Initializes an instance of the CharacterCriteria class
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CharacterCriteria.Name">
+            <summary>
+            Return only characters matching the specified full character name (e.g. Spider-Man).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CharacterCriteria.NameStartsWith">
+            <summary>
+            Return characters with names that begin with the specified string (e.g. Sp).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CharacterCriteria.Comics">
+            <summary>
+            Return only characters which appear in comics specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CharacterCriteria.Series">
+            <summary>
+            Return only characters which appear in series specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CharacterCriteria.Events">
+            <summary>
+            Return only characters which appear in events specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CharacterCriteria.Stories">
+            <summary>
+            Return only characters which appear in stories specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CharacterCriteria.OrderBy">
+            <summary>
+            Order the result set by the selected fields. Multiple values are given priority in the order in which they are passed.
+            </summary>
+        </member>
+        <member name="T:MarvelSharp.Criteria.BaseCriteria">
+            <summary>
+            A base class for criteria to be used to filter resources
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.BaseCriteria.ModifiedSince">
+            <summary>
+            Return only entities which have been modified since the specified date.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Criteria.BaseCriteria.ToDictionary">
+            <summary>
+            Converts the criteria data to a key-value dictionary
+            </summary>
+            <returns>A dictionary of key value pairs</returns>
+        </member>
+        <member name="T:MarvelSharp.Criteria.CreatorCriteria">
+            <summary>
+            A class representing criteria by which to filter creators.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.Criteria.CreatorCriteria.#ctor">
+            <summary>
+            Initializes an instance of the CreatorCriteria class
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.FirstName">
+            <summary>
+            Filter by creator first name (e.g. Brian).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.MiddleName">
+            <summary>
+            Filter by creator middle name (e.g. Michael).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.LastName">
+            <summary>
+            Filter by creator last name (e.g. Bendis).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.Suffix">
+            <summary>
+            Filter by suffix or honorific (e.g. Jr., Sr.).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.NameStartsWith">
+            <summary>
+            Filter by creator names that match critera (e.g. B, St L).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.FirstNameStartsWith">
+            <summary>
+            Filter by creator first names that match critera (e.g. B, St L).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.MiddleNameStartsWith">
+            <summary>
+            Filter by creator middle names that match critera (e.g. Mi).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.LastNameStartsWith">
+            <summary>
+            Filter by creator last names that match critera (e.g. Ben).
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.Comics">
+            <summary>
+            Return only creators who worked on comics specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.Series">
+            <summary>
+            Return only creators who worked on series specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.Events">
+            <summary>
+            Return only creators who worked on comics that took place in events specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.Stories">
+            <summary>
+            Return only creators who worked on stories specified by a list of IDs.
+            </summary>
+        </member>
+        <member name="P:MarvelSharp.Criteria.CreatorCriteria.OrderBy">
+            <summary>
+            Order the result set by the selected fields. Multiple values are given priority in the order in which they are passed.
+            </summary>
+        </member>
+        <member name="M:MarvelSharp.ApiService.#ctor(System.String,System.String)">
+            <summary>
+                Initializes a new instance of the ApiService class
+            </summary>
+            <param name="apiPublicKey">The public API key provided by Marvel</param>
+            <param name="apiPrivateKey">The private API key provided by Marvel</param>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetAllCharactersAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CharacterCriteria)">
+            <summary>
+                Fetches a list of comic characters, with optional filters
+            </summary>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetAllComicsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.ComicCriteria)">
+            <summary>
+                Fetches a list of comics, with optional filters
+            </summary>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetAllCreatorsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CreatorCriteria)">
+            <summary>
+                Fetches a list of comic creators, with optional filters
+            </summary>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetAllEventsAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.EventCriteria)">
+            <summary>
+                Fetches a list of events, with optional filters
+            </summary>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetAllSeriesAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.SeriesCriteria)">
+            <summary>
+                Fetches a list of comic series, with optional filters
+            </summary>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetAllStoriesAsync(System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.StoryCriteria)">
+            <summary>
+                Fetches a list of stories, with optional filters
+            </summary>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCharacterByIdAsync(System.Int32)">
+            <summary>
+                Fetches details for the specified character
+            </summary>
+            <param name="characterId">The character ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCharacterComicsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.ComicCriteria)">
+            <summary>
+                Fetches a list of comics containing the specified character, with optional filters
+            </summary>
+            <param name="characterId">The character ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCharacterEventsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.EventCriteria)">
+            <summary>
+                Fetches a list of events in which the specified character appears, with optional filters
+            </summary>
+            <param name="characterId">The character ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCharacterSeriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.SeriesCriteria)">
+            <summary>
+                Fetches a list of comic series in which the specified character appears, with optional filters.
+            </summary>
+            <param name="characterId">The character ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCharacterStoriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.StoryCriteria)">
+            <summary>
+                Fetches a list of comic stories featuring the specified character, with optional filters
+            </summary>
+            <param name="characterId">The character ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetComicByIdAsync(System.Int32)">
+            <summary>
+                Fetches details for the specified comic
+            </summary>
+            <param name="comicId">The comic ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetComicCharactersAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CharacterCriteria)">
+            <summary>
+                Fetches a list of characters that appear in a specific comic, with optional filters
+            </summary>
+            <param name="comicId">The comic ID.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetComicCreatorsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CreatorCriteria)">
+            <summary>
+                Fetches a list of comic creators whose work appears in the specified comic, with optional filters
+            </summary>
+            <param name="comicId">The comic ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetComicEventsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.EventCriteria)">
+            <summary>
+                Fetches a list of events in which a specific comic appears, with optional filters
+            </summary>
+            <param name="comicId">The comic ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetComicStoriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.StoryCriteria)">
+            <summary>
+                Fetches a list of comic stories in a specific comic issue, with optional filters
+            </summary>
+            <param name="comicId">The comic ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCreatorByIdAsync(System.Int32)">
+            <summary>
+                Fetches details for the specified comic creator
+            </summary>
+            <param name="creatorId">The creator ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCreatorComicsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.ComicCriteria)">
+            <summary>
+                Fetches a list of comics in which the work of the specified creator appears, with optional filters
+            </summary>
+            <param name="creatorId">The creator ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCreatorEventsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.EventCriteria)">
+            <summary>
+                Fetches a list of events featuring the work of a specific creator, with optional filters
+            </summary>
+            <param name="creatorId">The creator ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCreatorSeriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.SeriesCriteria)">
+            <summary>
+                Fetches a list of comic series in which the specified creator's work appears, with optional filters
+            </summary>
+            <param name="creatorId">The creator ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetCreatorStoriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.StoryCriteria)">
+            <summary>
+                Fetches a list of comic stories by the specified creator, with optional filters
+            </summary>
+            <param name="creatorId">The creator ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetEventByIdAsync(System.Int32)">
+            <summary>
+                Fetches details for the specified event
+            </summary>
+            <param name="eventId">The event ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetEventCharactersAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CharacterCriteria)">
+            <summary>
+                Fetches a list of characters that appear in a specific event, with optional filters
+            </summary>
+            <param name="eventId">The event ID.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetEventComicsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.ComicCriteria)">
+            <summary>
+                Fetches a list of comics that take place during the specified event, with optional filters
+            </summary>
+            <param name="eventId">The event ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetEventCreatorsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CreatorCriteria)">
+            <summary>
+                Fetches a list of comic creators whose work appears in the specified event, with optional filters
+            </summary>
+            <param name="eventId">The event ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetEventSeriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.SeriesCriteria)">
+            <summary>
+                Fetches a list of comic series in which the specified event takes place, with optional filters
+            </summary>
+            <param name="eventId">The event ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetEventStoriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.StoryCriteria)">
+            <summary>
+                Fetches a list of comic stories from the specified event, with optional filters
+            </summary>
+            <param name="eventId">The event ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetSeriesByIdAsync(System.Int32)">
+            <summary>
+                Fetches details for the specified comic series
+            </summary>
+            <param name="seriesId">The series ID.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetSeriesCharactersAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CharacterCriteria)">
+            <summary>
+                Fetches a list of characters that appear in the specified series, with optional filters
+            </summary>
+            <param name="seriesId">The series ID.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetSeriesComicsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.ComicCriteria)">
+            <summary>
+                Fetches a list of comics that are published as part of the specified series, with optional filters
+            </summary>
+            <param name="seriesId">The series ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetSeriesCreatorsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CreatorCriteria)">
+            <summary>
+                Fetches a list of comic creators whose work appears in the specified series, with optional filters
+            </summary>
+            <param name="seriesId">The series ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetSeriesEventsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.EventCriteria)">
+            <summary>
+                Fetches a list of events which occur in the specified series, with optional filters
+            </summary>
+            <param name="seriesId">The series ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetSeriesStoriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.StoryCriteria)">
+            <summary>
+                Fetches a list of comic stories from the specified series, with optional filters
+            </summary>
+            <param name="seriesId">The series ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetStoryByIdAsync(System.Int32)">
+            <summary>
+                Fetches details for the specified story
+            </summary>
+            <param name="storyId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetStoryCharactersAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CharacterCriteria)">
+            <summary>
+                Fetches a list of comic characters appearing in the specified story, with optional filters
+            </summary>
+            <param name="storyId">The story ID.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetStoryComicsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.ComicCriteria)">
+            <summary>
+                Fetches a list of comics in which the specified story appears, with optional filters
+            </summary>
+            <param name="storyId">The story ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetStoryCreatorsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.CreatorCriteria)">
+            <summary>
+                Fetches a list of comic creators whose work appears in the specified story, with optional filters
+            </summary>
+            <param name="storyId">The story ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetStoryEventsAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.EventCriteria)">
+            <summary>
+                Fetches a list of events in which the specified story appears, with optional filters
+            </summary>
+            <param name="storyId">The story ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+        <member name="M:MarvelSharp.ApiService.GetStorySeriesAsync(System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},MarvelSharp.Criteria.SeriesCriteria)">
+            <summary>
+                Fetches a list of comic series in which the specified story takes place, with optional filters
+            </summary>
+            <param name="storyId">The story ID.</param>
+            <param name="limit">Limit the result set to the specified number of resources.</param>
+            <param name="offset">Skip the specified number of resources in the result set.</param>
+            <param name="criteria">Filter the result set by the specified criteria.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

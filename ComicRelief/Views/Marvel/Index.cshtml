@@ -1,0 +1,96 @@
+﻿@model IEnumerable<ComicRelief.Models.Comic>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.label</h2><br />
+<h3>Marvel API Search Options</h3>
+@using (Html.BeginForm("Index", "Marvel", FormMethod.Post))
+{
+    <table border="1">
+        <tr bgcolor="#F6F6F6">
+            <th width="168">Title Starts With</th>
+            <th width="148">Comic ID</th>
+            <th width="197">ISBN</th>
+        </tr>
+        <tr align="center">
+            <td>@Html.TextBox("titleStartsWith")</td>
+            <td>@Html.TextBox("id")</td>
+            <td>@Html.TextBox("isbn")</td>
+        </tr>
+    </table>
+    <input type="submit" value="Search Marvel" />
+}
+<hr />
+
+@if (Model.Count() > 0)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ISBN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IssueNumber)
+            </th>
+            <th>
+                Add to Collection
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ISBN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IssueNumber)
+                </td>
+                @if (item.IsComicInCollection)
+                {
+                    <td>
+                        In Collection
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        @Html.ActionLink("Add Comic", "AddToCollection", "Collections", new { comicID = item.Id }, null)
+                    </td>
+                }
+
+            </tr>
+        }
+
+    </table>
+}
+else
+{
+    <table>
+        <tr>
+            <h3>No results were found!</h3>
+        </tr>
+    </table>
+}
