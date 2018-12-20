@@ -1,3 +1,0 @@
-﻿Generated model file: Collection.edmx.
-Loading metadata from the database took 00:00:00.9707587.
-Generating the model took 00:00:01.7169088.
